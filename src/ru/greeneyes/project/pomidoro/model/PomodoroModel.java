@@ -106,7 +106,10 @@ public class PomodoroModel {
 			case BREAK:
 				updateProgress(time);
 				if (time >= startTime + progressMax) {
-					state = STOP;
+					state = RUN;
+					startTime = time;
+					updateProgress(time);
+					updateProgressMax();
 					wasManuallyStopped = false;
 				}
 				break;
