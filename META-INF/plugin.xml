@@ -2,12 +2,14 @@
     <name>Pomodoro-tm-cd</name>
     <description>Pomodoro timer for coding dojo</description>
     <version>2.0</version>
-    <vendor url="https://AlexJudge@github.com/AlexJudge/pomodoro-tm-cd.git">AlexJudge</vendor>
+    <vendor url="https://github.com/AlexJudge/pomodoro-tm-cd">AlexJudge</vendor>
     <idea-version since-build="8000"/>
     <description>
         <![CDATA[
 	<html><body>
 	Time management timer for Pomodoro Technique. (http://www.pomodorotechnique.com)</br>
+	Original plug-in is Pomodoro-tm. This plug-in is fork because we need to change some functionality for coding dojo.</br>
+	It could be used with original plug-in.</br>
 	How to use it:</br>
    <ol>
    <li>Choose a task to be accomplished and start pomodoro timer.</li>
@@ -21,10 +23,7 @@
     <change-notes>
         <![CDATA[<html><body>
         <ul>
-            <li>0.2 - added ring sound, status bar timer, popup notification, ctrl+shift+P shortcut</li>
-            <li>0.3 - added settings UI, ring volume</li>
-            <li>0.4 - modal window to block IntelliJ during break, option to hide tool window</li>
-            <li>2.0 - min timeinterval 1 min, not stopping timer after break</li>
+            <li>2.0 - min time interval 1 min, timer does not stop after break, sygnal rings after each time interval</li>
         </ul>
         </body></html>
         ]]>
@@ -40,12 +39,12 @@
         </component>
     </application-components>
 
-    <actions>
+    <!--<actions>
         <action id="Start/stop pomodoro cd" class="ru.greeneyes.project.pomidoro.codingdojo.PomodoroAction"
                 description="Start or stop pomodoro timer for coding dojo">
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift C P"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift P"/>
         </action>
-    </actions>
+    </actions>-->
 
     <extensions defaultExtensionNs="com.intellij">
         <statusBarComponent implementation="ru.greeneyes.project.pomidoro.codingdojo.PomodoroPanelFactory"/>
