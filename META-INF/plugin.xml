@@ -1,8 +1,8 @@
 <idea-plugin version="2">
-    <name>Pomodoro-tm</name>
-    <description>Pomodoro timer</description>
-    <version>0.4</version>
-    <vendor url="http://github.com/dkandalov/pomodoro-tm">mq0</vendor>
+    <name>Pomodoro-tm-cd</name>
+    <description>Pomodoro timer for coding dojo</description>
+    <version>2.0</version>
+    <vendor url="https://AlexJudge@github.com/AlexJudge/pomodoro-tm-cd.git">AlexJudge</vendor>
     <idea-version since-build="8000"/>
     <description>
         <![CDATA[
@@ -24,6 +24,7 @@
             <li>0.2 - added ring sound, status bar timer, popup notification, ctrl+shift+P shortcut</li>
             <li>0.3 - added settings UI, ring volume</li>
             <li>0.4 - modal window to block IntelliJ during break, option to hide tool window</li>
+            <li>2.0 - min timeinterval 1 min, not stopping timer after break</li>
         </ul>
         </body></html>
         ]]>
@@ -35,22 +36,22 @@
 
     <application-components>
         <component>
-            <implementation-class>ru.greeneyes.project.pomidoro.PomodoroComponent</implementation-class>
+            <implementation-class>ru.greeneyes.project.pomidoro.codingdojo.PomodoroComponent</implementation-class>
         </component>
     </application-components>
 
     <actions>
-        <action id="Start/stop pomodoro" class="ru.greeneyes.project.pomidoro.PomodoroAction"
-                description="Start or stop pomodoro timer">
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift P"/>
+        <action id="Start/stop pomodoro cd" class="ru.greeneyes.project.pomidoro.codingdojo.PomodoroAction"
+                description="Start or stop pomodoro timer for coding dojo">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift C P"/>
         </action>
     </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <statusBarComponent implementation="ru.greeneyes.project.pomidoro.PomodoroPanelFactory"/>
-        <applicationService serviceInterface="ru.greeneyes.project.pomidoro.model.Settings"
-                            serviceImplementation="ru.greeneyes.project.pomidoro.model.Settings"/>
-        <applicationService serviceInterface="ru.greeneyes.project.pomidoro.model.PomodoroModelState"
-                            serviceImplementation="ru.greeneyes.project.pomidoro.model.PomodoroModelState"/>
+        <statusBarComponent implementation="ru.greeneyes.project.pomidoro.codingdojo.PomodoroPanelFactory"/>
+        <applicationService serviceInterface="ru.greeneyes.project.pomidoro.codingdojo.model.Settings"
+                            serviceImplementation="ru.greeneyes.project.pomidoro.codingdojo.model.Settings"/>
+        <applicationService serviceInterface="ru.greeneyes.project.pomidoro.codingdojo.model.PomodoroModelState"
+                            serviceImplementation="ru.greeneyes.project.pomidoro.codingdojo.model.PomodoroModelState"/>
     </extensions>
 </idea-plugin>

@@ -13,6 +13,8 @@
  */
 package ru.greeneyes.project.pomidoro.model;
 
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
+
 /**
  * User: dima
  * Date: Dec 5, 2010

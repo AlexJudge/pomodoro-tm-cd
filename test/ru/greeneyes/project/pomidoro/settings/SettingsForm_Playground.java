@@ -14,7 +14,7 @@
 package ru.greeneyes.project.pomidoro.settings;
 
 import com.intellij.openapi.options.ConfigurationException;
-import ru.greeneyes.project.pomidoro.model.Settings;
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
 
 import javax.swing.*;
 import java.awt.*;

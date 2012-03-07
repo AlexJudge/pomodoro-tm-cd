@@ -17,7 +17,7 @@ import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.options.ConfigurationException;
 import org.jetbrains.annotations.Nls;
 import ru.greeneyes.project.pomidoro.UIBundle;
-import ru.greeneyes.project.pomidoro.model.Settings;
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;

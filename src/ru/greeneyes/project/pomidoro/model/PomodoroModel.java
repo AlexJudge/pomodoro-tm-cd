@@ -13,6 +13,9 @@
  */
 package ru.greeneyes.project.pomidoro.model;
 
+import ru.greeneyes.project.pomidoro.codingdojo.model.PomodoroModelState;
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
+
 import java.util.WeakHashMap;
 
 import static ru.greeneyes.project.pomidoro.model.PomodoroModel.PomodoroState.BREAK;

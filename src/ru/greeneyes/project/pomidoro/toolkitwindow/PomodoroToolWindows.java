@@ -22,10 +22,10 @@ import com.intellij.openapi.wm.ToolWindowAnchor;
 import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
-import ru.greeneyes.project.pomidoro.PomodoroComponent;
+import ru.greeneyes.project.pomidoro.codingdojo.PomodoroComponent;
 import ru.greeneyes.project.pomidoro.UIBundle;
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
 import ru.greeneyes.project.pomidoro.model.ChangeListener;
-import ru.greeneyes.project.pomidoro.model.Settings;
 
 import javax.swing.*;
 import java.util.HashSet;
@@ -36,7 +36,7 @@ import java.util.Set;
  * @date 28.04.2010 12:02:26
  */
 public class PomodoroToolWindows implements ChangeListener {
-	public static final String TOOL_WINDOW_ID = "Pomodoro";
+	public static final String TOOL_WINDOW_ID = "Pomodoro CD";
 
 	private static final ImageIcon pomodoroIcon = new ImageIcon(PomodoroToolWindows.class.getResource("/resources/pomodoro-icon.png"));
 	private final Set<Project> hasRegisteredWindow = new HashSet<Project>();

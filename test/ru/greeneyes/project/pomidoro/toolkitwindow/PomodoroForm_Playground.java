@@ -13,10 +13,10 @@
  */
 package ru.greeneyes.project.pomidoro.toolkitwindow;
 
+import ru.greeneyes.project.pomidoro.codingdojo.model.PomodoroModelState;
+import ru.greeneyes.project.pomidoro.codingdojo.model.Settings;
 import ru.greeneyes.project.pomidoro.model.ControlThread;
 import ru.greeneyes.project.pomidoro.model.PomodoroModel;
-import ru.greeneyes.project.pomidoro.model.PomodoroModelState;
-import ru.greeneyes.project.pomidoro.model.Settings;
 
 import javax.swing.*;
 
